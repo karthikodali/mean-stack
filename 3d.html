@@ -1,0 +1,26 @@
+<doctype html>
+    <html>
+        <head>
+            <script>
+                var n,t=150;
+                n=parseInt(window.prompt("enter the no.of tickets",""));
+                if(n==1 || n==2)
+                { 
+                   document.write("the total price of tickets is "+n*t);    
+                   document.write("<br>");
+                }
+                else if(n>2 && n<=6)
+                {
+                    document.write("the actual price of tickets is "+n*t);
+                    document.write("<br>");
+                    document.write("the total price of tickets is "+((n*t)-((n*t)/100)*5));
+                    document.write("<br>");
+                }
+                else
+                {
+                    document.write("ticket booking is not possible");
+                }
+            </script>
+        </head>
+    </html>
+</doctype>
