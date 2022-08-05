@@ -1,0 +1,41 @@
+
+
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+<h4>Replacing gtr with ferrari in array</h4>
+<p id="demo1"></p>
+<h4>array with strings and numerical values</h4>
+<p id="demo2"></p>
+<h4>adding value 'kk' at end of array using push() </h4>
+<p id="demo3"></p>
+<h4>adding value 'sai' at start of array using unshift()</h4>
+<p id="demo4"></p>
+<h4>Remove value 'kk' at end of array using pop()</h4>
+<p id="demo5"></p>
+<h4>Remove value 'sai' at start of array using shift()</h4>
+<p id="demo6"></p>
+<script>
+const cars = ["GTR","porsche","BMW"];
+document.getElementById("demo").innerHTML = cars;
+cars[0] = "ferrari";
+document.getElementById("demo1").innerHTML = cars;
+const person = ["vivi","mcc",46];
+document.getElementById("demo2").innerHTML = person;
+person.push("KK");
+document.getElementById("demo3").innerHTML = person;
+person.unshift("sai");
+document.getElementById("demo4").innerHTML = person;
+person.pop("KK");
+document.getElementById("demo5").innerHTML = person;
+person.shift();
+document.getElementById("demo6").innerHTML = person;
+
+</script>
+
+</body>
+
+</html>
